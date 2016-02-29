@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         Actor leo = new Actor("Leonardo DiCaprio", "Nov 11, 1974", "1");
         Actor matt = new Actor("Matt Damon", "Oct 8, 1970", "1");
 
-        ArrayList<Actor> mActorList = new ArrayList<>();
-        ActorAdapter adapter = new ActorAdapter(MainActivity.this, mActorList);
+        ArrayList<Actor> mActorsList = new ArrayList<>();
+        ActorAdapter adapter = new ActorAdapter(MainActivity.this, mActorsList);
 
         ListView listView = (ListView)findViewById(R.id.LV);
         listView.setAdapter(adapter);
